@@ -1,0 +1,37 @@
+- name: Game of Life
+  description: "One of my first projects with HTML 5 canvas. I decided to make a simple Game of Life for the Pokki platform."
+  image: /images/gameoflife.png
+  link: /work/gameoflife/index.htm
+  source: https://bitbucket.org/SaxJ/game-of-life/overview
+
+- name: Tetris AI
+  description: "A tetris AI programmed in Java. It uses a simple simple depth-limited lookahead and some simple heuristics to make good tetris moves."
+  image: /images/tetris.png
+  source: https://bitbucket.org/joshk93/aiproject
+
+- name: Space Game Hackathon
+  description: "A simple astroids-like game made in a weekend for a HTML5 Game making competition."
+  image: /images/spaceship.png
+  link: /work/theplane/index.html
+  source: https://bitbucket.org/SaxJ/html-zombies
+
+- name: Othello Game
+  description: "Made in a day as a project to become more familier with Python. Uses Turtle graphics for drawing."
+  image: /images/othello.png
+  source: https://bitbucket.org/SaxJ/othello
+
+- name: Red-Black Tree Impementation
+  description: "A algorithms and data-structures project, with the goal of implementing a self-balancing binary tree. This one is written in Java."
+  image: /images/rbtree.png
+  source: https://bitbucket.org/SaxJ/dsa-project/overview
+
+- name: Interactive Projective Art - Boids
+  description: "Still a WIP, this project uses a camera feed and image processing techniques to project fish that will react to people walking through the projection."
+  image: /images/fishcv.png
+  link: /work/fishcv/index.html
+  source: https://github.com/alexlouden/fishcv
+
+- name: Decentrilised Lab Scheduling
+  description: "A project to test my functional programming skills. A small prolog-like language is specified for describing experiments that need to be run. Given a set of labs, the program needs to run experiments in labs (each lab is on a seperate thread) in a way that is decentrilised, so that if any client were to be shut down, the program still functions normally."
+  image: /images/cloud.png
+  source: https://github.com/SaxJ/Paradigms-Project

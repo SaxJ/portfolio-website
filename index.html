@@ -1,0 +1,18 @@
+---
+layout: default
+title: Saxon Jensen
+---
+
+<div id="home">
+  	<h1>Recent Blog Posts</h1>
+	{% for post in site.posts %}
+		<div class="post">
+			<a href="{{ post.url }}">
+				<h3>{{ post.title }}</h3>
+				<time>{{ post.date | date_to_string }}</time>
+				<div class="excerpt">{{ post.excerpt }}</div>
+			</a>
+		</div>
+		{% unless forloop.last %}<hr style="color: #CCC" />{% endunless %}
+	{% endfor %}
+</div>

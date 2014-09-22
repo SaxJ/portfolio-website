@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- LOAD EASELJS CORE -->
+        <script src="http://code.createjs.com/easeljs-0.6.0.min.js" type="text/javascript"></script>
+        <script src="http://code.createjs.com/preloadjs-0.3.0.min.js" type="text/javascript"></script>
+        
+        
+        <!-- LOAD GAME CORE -->
+        <script src="js/World.js"></script>
+        <script src="js/Preloader.js"></script>
+        <script src="js/SaveSystem.js"></script>
+        <script src="js/HTML.js"></script>
+        <script src="js/Player.js" type="text/javascript"></script>
+        <script src="js/Bullet.js" type="text/javascript"></script>
+        <script src="js/Skirter.js"></script>
+        <script src="js/RichochetDrone.js"></script>
+        <script src="js/Particle.js" type="text/javascript"></script>
+        <script src="js/ParticleOrange.js"></script>
+        <script src="js/Enemy.js" type="text/javascript"></script>
+        <script src="js/Powerup.js"></script>
+        <script src="js/BulletPowerup.js"></script>
+        <script src="js/BoostEffect.js"></script>
+        <script src="js/BoostFunctions.js"></script>
+        <script src="js/Boost.js"></script>
+        <script src="js/Game.js"></script>
+        <script src="js/GameLoop.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/Vector2D.js"></script>
+        <script src="js/KeyMap.js"></script>
+        <script src="js/Spray.js"></script>
+        <script src="js/Effect.js"></script>
+        <script src="js/Utility.js"></script>
+
+        <!-- CSS -->
+        <link rel="Stylesheet" href="css/main.css" />
+
+        <title>The Plane Rebooted</title>
+    </head>
+    <body onload="init();">
+        <canvas width="800" height="600" id="gameCanvas"></canvas>
+        <input type="button" value="Toggle Blind" onclick="Game.player.isBlind = !Game.player.isBlind;" style="position: absolute; top: 810px; left: 810px;"/>
+        <div id="hud" class="minHud">
+            <img src="images/health_cross.png" style="display: inline" alt="Health Icon" />
+            <span id="healthDisplay">100</span>
+        </div>
+        <div id="pauseMenu">
+            <h2>Paused</h2>
+            Explosion Size: <input type="range" min="5" max="70" onchange="Game.EXPLOSION_COUNT = this.value;" /><br />
+            Jet Spray Size: <input type="range" min="5" max="70" onchange="Game.player.SPRAY_SIZE = this.value;" /><br />
+            Background Effects: <input type="range" min="1" max="17" onchange="Game.EFFECT_CAP = this.value;" />
+        </div>
+        <div id="deathMenu">
+            <h1>Oh Snap! You died!</h1>
+            <h2>(Yeah, I know... duh!)</h2>
+            <br />
+            <div id="currentKills"></div>
+            <div id="recordKills"></div>
+            <input type="button" value="Start Again!" onclick="HTML.startGameListener();" />
+        </div>
+        <div id="startMenu">
+            <h1>The Plane</h1>
+            <div id="loadStatus"></div>
+            <div id="startGameButton"><input type="button" value="Start" onclick="HTML.startGameListener();" /></div>
+        </div>
+    </body>
+</html>

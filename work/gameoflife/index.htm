@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="Stylesheet" href="main.css" />
+    <script src="Javascript/easel - 4.0.js"></script>
+    <script src="Javascript/Game.js"></script>
+    <script src="Javascript/DrawGame.js"></script>
+</head>
+<body onload="init()">
+    <canvas id="gameCanvas" width="700" height="700"></canvas>
+    <div id="gameControls">
+        <h1 style="text-decoration: underline; background-color: #403B3D;">Conway's Game of Life</h1>
+        <input type="button" value="Play / Pause" onclick="togglePause()" /><br />
+        <input type="button" value="Reset" onclick="resetGame()" />
+        <hr />
+        <h2>Speed</h2>
+        <input type="range" value="5" max="30" min="1" step="1" onchange="Ticker.setFPS(this.value)" id="speedSlider" />
+        <hr />
+        <h2>Initial Population Density</h2>
+        <p>(Requires Reset)</p>
+        <input type="range" value="0.1" max="1" min="0" step="0.05" onchange="setDensity(this.value)" />
+        <hr />
+        <h2>Dead Cell Color</h2>
+        R: <input type="range" value="0" min="0" max="255" step="1" onchange="setDeadColor()" id="deadRed" /><br />
+        G: <input type="range" value="0" min="0" max="255" step="1" onchange="setDeadColor()" id="deadGreen" /><br />
+        B: <input type="range" value="255" min="0" max="255" step="1" onchange="setDeadColor()" id="deadBlue" />
+        <hr />
+        <h2>Live Cell Color</h2>
+        <p>(Requires Reset)</p>
+        R: <input type="range" value="0" min="0" max="255" step="1" onchange="setLiveColor()" id="liveR" /><br />
+        G: <input type="range" value="255" min="0" max="255" step="1" onchange="setLiveColor()" id="liveG" /><br />
+        B: <input type="range" value="0" min="0" max="255" step="1" onchange="setLiveColor()" id="liveB" />
+    </div>
+</body>
+</html>

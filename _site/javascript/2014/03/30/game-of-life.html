@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Game of Life</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- font declarations -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Saxon Jensen</a></h1>
+            <a class="extra" href="/">blog</a>
+            <a class="extra" href="/about.html">about</a>
+            <a class="extra" href="/work.html">work</a>
+          </div>
+
+          <h2>Game of Life</h2>
+<p class="meta">30 Mar 2014</p>
+
+<div class="post">
+<p>As I’ve had time, I’ve been rounding up projects I’ve done to post up. The first project I’m going to post is <strong>The Game of Life</strong> written in JavaScript.</p>
+
+<p>The Game of Life is a cellular automaton devised by John Horton Conway in 1970. I remember seeing a demo of this on a grid of lights when I was young, and I thought it was just really interesting to watch. When HTML 5 canvas stuff was new to me, I decided programming my own Game of Life using javascript would be a fun project for learning. I published this as an app on the <a href="http://www.pokki.com">Pokki Store</a> hoping that maybe somebody else would be just as interested watching it as I was.</p>
+
+<p>I whipped this up in a weekend, so it’s not very hard. The game uses two boolean matrices, and on each ‘tick’, the active matrix is processed using the rules, and the results are placed in the second matrix. The second matrix is then the active matrix, and this repeats for each game tick. It’s pretty simple.</p>
+
+<p>The game is displayed by going through the active grid matrix, and drawing a square at a true cell. The co-ordinates are just multiples of the matrix index.</p>
+
+<p>I’m looking at fixing some pretty major usability problems with this and re-publishing it on the Pokki store. One of the biggest problems is the fact that you have to click each square you want to activate. This is annoying, and you should be able to just click &amp; drag to draw shapes on the game.</p>
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Saxon Jensen<br />
+                Software Engineer  
+              </p>
+            </div>
+            <div class="contact" style="float: right;">
+              <p>
+                <a href="https://github.com/saxj">github.com/saxj</a><br />
+                <a href="http://www.linkedin.com/pub/saxon-jensen/65/7a1/186">linkedin</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

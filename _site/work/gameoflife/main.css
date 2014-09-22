@@ -1,0 +1,53 @@
+﻿body {
+}
+
+#gameCanvas 
+{
+    background-color: #091042;
+    position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#gameControls 
+{
+    background-color: Black;
+    position: absolute;
+	width: 200px;
+	height: 700px;
+	top: 0px;
+	left: 700px;
+	text-align: center;
+	color: White;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 60%;
+	border-left: 2px solid white;
+}
+
+#gameControls > p 
+{
+    font-size: small;
+}
+
+input 
+{
+    border-style: solid;
+	background-color: Black;
+	border-color: White;
+	border-width: 2px;
+	color: White;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 120%;
+}
+
+input:hover 
+{
+    background-color: #6E6E6E;
+    border-color: White;
+	border-width: 2px;
+	color: White;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 120%;
+	border-style: solid;
+}
+	
