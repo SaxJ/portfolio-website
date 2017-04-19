@@ -35,3 +35,8 @@
   description: "A project to test my functional programming skills. A small prolog-like language is specified for describing experiments that need to be run. Given a set of labs, the program needs to run experiments in labs (each lab is on a seperate thread) in a way that is decentrilised, so that if any client were to be shut down, the program still functions normally."
   image: /images/cloud.png
   source: https://github.com/SaxJ/Paradigms-Project
+
+- name: AI for 1010! Game
+  description: "Frustrated that I could not beat a friends high score in 1010!, I set about making a program in C99 that could play the game for me. Not quite finished yet, but 90% there."
+  image: /images/brain.jpg
+  source: https://github.com/SaxJ/1010Solver

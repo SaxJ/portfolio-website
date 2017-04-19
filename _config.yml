@@ -1,4 +1,3 @@
 name: Saxon Jensen
-pygments: true
-paginate: 10
+highlighter: true
 destination: ../saxj.github.io

@@ -1,0 +1,20 @@
+---
+layout: default
+title: Work
+---
+<div id="work">
+	<h1>Academia</h1>
+	<p>
+        A collection of some of my academic works.
+	</p>
+	{% for project in site.data.academic %}
+		<div class="project {% unless forloop.last %}bordered{% endunless %}">
+			<a href="{{ project.link }}">
+				<div class="text">
+					<h1>{{ project.name }}</h1>
+					<p>{{ project.description }}</p>
+				</div>
+			</a>
+		</div>
+	{% endfor %}
+</div>

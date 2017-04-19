@@ -1,0 +1,15 @@
+- name: Automated Analysis of MicroCT Scanned Bread Dough
+  description: My first published paper, on the analysis of microCT scanned bread dough using image processing algorithms.
+  link: http://onlinelibrary.wiley.com/doi/10.1111/jmi.12163/abstract?deniedAccessCustomisedMessage=&userIsAuthenticated=false
+
+- name: Honours Project Proposal
+  description: My first written proposal for my honours work. I learnt a lot writing this.
+  link: /pdfs/honours/proposal.pdf
+
+- name: Honours Literature Review
+  description: A literature review for my honours year. A review of a method of object tracking that relies on representing a tracked object as a linear combination of template images.
+  link: /pdfs/honours/review.pdf
+
+- name: Honours Experiment 1
+  description: A very small experiment conducted to test the source code of three L1-trackers.
+  link: /pdfs/honours/experiment.pdf
